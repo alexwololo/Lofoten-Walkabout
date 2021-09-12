@@ -1,78 +1,243 @@
+/* RESET */
+
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
+/*******************************************************************************
+
+MOBILE
+
+*******************************************************************************/
+
+/* HEADER */
 .nav {
-    display: flex;
-    border: 1px solid #000;
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* flex: 1 0 10vh; */
 }
 
 .logo {
-    border: 1px solid #000;
-    flex: 1 0 auto;
-    padding: 1px;
-    margin: 1px;
+  border: 1px solid #000;
+  flex: 1 0 auto;
+  padding: 1px;
+  margin: 1px;
+}
+
+span {
+color: #727272;
 }
 
 .menu {
-    border: 1px solid #000;
-    flex: 10 0 auto;
-    text-align: right;
-    padding: 1px;
-    margin: 1px;
+  border: 1px solid #000;
+  /* flex: 10 0 auto; */
+  text-align: right;
+  padding: 1px;
+  margin: 1px;
 }
 
-.main-content{
-    border: 1px solid #000;
-    display: flex;
-    flex-direction: column;
+.menu ul {
+list-style: none;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.nav a {
+padding: 1vw;
+margin: 1vw;
+}
+
+a {
+text-decoration: none;
+}
+
+/* MAIN */
+#hero-container{
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: column;
 }
 
 .hero {
-    border: 1px solid #000;
-    flex: 1 0 37vh;
-    padding: 1px;
-    margin: 1px;
-
+  border: 1px solid #000;
+  flex: 1 0 90vh;
+  padding: 1px;
+  margin: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-txt {
-    text-align: center;
-    
-    display: inline;
+border: solid 1px #000;
+padding: 1px;
+margin: 1px;
+text-align: center;
+}
+
+#content-container{
+border: 1px solid #000;
+display: flex;
+flex-direction: column;
 }
 
 .hike {
-    border: 1px solid #000;
-    flex: 1 0 15vh;
-    padding: 1px;
-    margin: 1px;
-}
-.eat {
-    border: 1px solid #000;
-    flex: 1 0 15vh;
-    padding: 1px;
-    margin: 1px;
-}
-.sleep {
-    border: 1px solid #000;
-    flex: 1 0 15vh;
-    padding: 1px;
-    margin: 1px;
+  border: 1px solid #000;
+  flex: 1 0 30vh;
+  padding: 1px;
+  margin: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
+.hike-txt {
+  border: 1px solid #000;
+  padding: 1vw;
+  margin: 2vh;
+}
+
+.eat {
+  border: 1px solid #000;
+  flex: 1 0 30vh;
+  padding: 1px;
+  margin: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.eat-txt {
+border: 1px solid #000;
+padding: 1vw;
+margin: 2vh;
+}
+
+.sleep {
+  border: 1px solid #000;
+  flex: 1 0 30vh;
+  padding: 1px;
+  margin: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.sleep-txt {
+border: 1px solid #000;
+padding: 1vw;
+margin: 2vh;
+}
+
+/* FOOTER */
 .footer {
-    border: solid 1px #000;
-    display: flex;
+  border: solid 1px #000;
+  flex: 1 0 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .foot-txt {
-    border: solid 1px #000;
-    flex: 1;
-    padding: 1px;
-    margin: 1px;
-    text-align: center;
+  border: solid 1px #000;
+  padding: 1vw;
+  margin: 1vh;
 }
 
+/*******************************************************************************
+
+TABLET / DESKTOP
+
+*******************************************************************************/
+
+@media (min-width: 750px) {
+.nav {
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* flex: 1 0 10vh; */
+}
+
+
+.logo {
+border: 1px solid #000;
+/* flex: 1 0 auto; */
+padding: 1rem;
+margin: 1rem;
+}
+
+span {
+color: #727272;
+}
+
+.menu {
+border: 1px solid #000;
+/* flex: 10 0 auto; */
+text-align: right;
+padding: 1rem;
+margin: 1rem;
+}
+
+.menu ul {
+list-style: none;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+/* MAIN */
+
+#content-container{
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: row;
+  height: 90vh;
+
+}
+
+.hike, .eat, .sleep {
+border: 1px solid #000;
+flex: 1;
+padding: 1px;
+margin: 1px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.hike-txt{
+border: 1px solid #000;
+padding: 1px;
+margin: 10rem 0 0 0;
+text-align: center;
+align-self: flex-start;
+}
+
+.eat-txt{
+border: 1px solid #000;
+padding: 1px;
+margin: 1px;
+text-align: center;
+align-self: center;
+}
+
+.sleep-txt{
+border: 1px solid #000;
+padding: 1px;
+margin: 0 0 10rem 0;
+text-align: center;
+align-self: flex-end;
+}
+}
