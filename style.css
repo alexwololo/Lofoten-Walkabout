@@ -84,6 +84,10 @@ padding: 1vw;
 margin: 1vw;
 }
 
+.nav a:hover {
+  border-bottom: #3c463e 2px solid;
+}
+
 a {
 text-decoration: none;
 }
@@ -103,7 +107,6 @@ text-decoration: none;
   justify-content: center;
   background: url(/images/lofoten_landing_hero2.jpg) center center/cover;
   position: relative;
-
 }
 
 /* Overlay */
@@ -128,6 +131,8 @@ z-index: 10;
 padding: 1rem;
 margin: 1rem;
 text-align: center;
+font-weight: 400;
+font-size: 5vw;
 }
 
 #content-container{
@@ -138,33 +143,33 @@ flex-direction: column;
 
 .hike {
   /* border: 1px solid #000; */
-  flex: 1 0 30vh;
+  flex: 1 0 32vh;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   background: url(/images/hike.jpg) center center/cover;
+  border-top: .1rem solid #635535;
 }
-
-
 
 .eat {
   /* border: 1px solid #000; */
-  flex: 1 0 30vh;
+  flex: 1 0 32vh;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   background: url(/images/eat.jpg) center center/cover;
+  border-top: .1rem solid #635535;
 }
-
-
 
 .sleep {
   /* border: 1px solid #000; */
-  flex: 1 0 30vh;
+  flex: 1 0 32vh;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   background: url(/images/live.jpg) center center/cover;
+  border-top: .1rem solid #635535;
+  border-bottom: .1rem solid #635535;
 }
 
 .hike-txt, .sleep-txt, .eat-txt {
@@ -254,8 +259,14 @@ TABLET / DESKTOP
   display: flex;
   align-items: center;
   justify-content: center;
+  border: none;
 
   }
+
+  /* .eat {
+    border-right: .1rem solid #635535;
+    border-left: .1rem solid #635535;
+  } */
 
   .hike-txt{
   /* border: 1px solid #000; */
