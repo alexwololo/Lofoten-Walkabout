@@ -1,3 +1,5 @@
+/* RESET */
+
 * {
   /* box-sizing so that padding doesnt take up the width */
   box-sizing: border-box;
@@ -163,19 +165,21 @@ textarea {
 .hero-image-two {
   width: 100%;
   object-fit: cover;
-  margin: 1rem 0;
+  margin-top: 1rem;
   max-height: 25vh;
 }
 
 /****** FOOTER *****/
 
-footer {
+/* footer {
   background-color: rgba(32, 32, 32, 0.9);
   color: white;
   font-size: .5rem;
   text-align: center;
   padding: .5rem;
 }
+ */
+
 
 /***************************** DESKTOP ***********************/
 

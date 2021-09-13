@@ -8,7 +8,7 @@
   <meta name="description" content="Contact page">
   <link rel="stylesheet" type="text/css" href="contact.css">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <title>Contact - Lofoten Walkabout</title>
+  <title>Contact - LofotenTrek</title>
 </head>
 
 <body>
@@ -16,15 +16,15 @@
   <header>
     <section class="nav">
       <div class="logo">
-        <h1><span>Lofoten</span>Walkabout</h1>
+        <h1><span>Lofoten</span>Trek</h1>
       </div>
       <div class="menu">
         <ul>
           <li><a href="#Hike">Hike</a></li>
           <li><a href="#Eat">Eat</a></li>
           <li><a href="#Live">Live</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-          <li><a href="/index.html">Home</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html">Home</a></li>
         </ul>
       </div>
     </section>
@@ -41,8 +41,8 @@
     </section>
 
     <!-- ****** CONTACT FORM ****** -->
-    <div id="form-background">
-      <section id="contact-container">
+    <section id="form-background">
+      <div id="contact-container">
         <h2>Contact Form</h2>
         <form>
           <label>
@@ -63,14 +63,14 @@
 
           <button class="form-button">Submit</button>
         </form>
-      </section>
-    </div>
+      </div>
+    </section>
 
     <!-- ****** OUR EMPLOYEES ****** -->
-    <div id="emp-background">
-      <section id="emp-container">
+    <section id="emp-background">
+      <div id="emp-container">
         <h2>Meet our staff</h2>
-        <div id="emp-one">
+        <section id="emp-one">
           <div class="img-employee">
             <picture>
               <source srcset="images/alexander_large.jpg" media="(min-width: 750px)">
@@ -84,9 +84,9 @@
               molestias eius!
             </p>
           </div>
-        </div>
+        </section>
 
-        <div id="emp-two">
+        <section id="emp-two">
           <div class="img-employee">
             <picture>
               <source srcset="images/amelia_large.png" media="(min-width: 750px)">
@@ -99,11 +99,12 @@
               doloremque esse voluptatum fugiat, natus iure a asperiores veritatis similique sint non? Dolores impedit
               accusantium esse.</p>
           </div>
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
+    </section>
 
     <!-- ****** HERO IMG #2****** -->
+    <!-- Får man ha flera hero-images? -->
     <picture>
       <source srcset="images/trolltunga_large.jpg" media="(min-width: 750px)">
       <img class="hero-image-two" src="images/trolltunga_small.jpg" alt="Trolltunga view">
@@ -111,8 +112,10 @@
   </main>
 
   <!-- ****** FOOTER ****** -->
-  <footer>
-    <p>Lofoten Walkabout | © 2021, All rights reserved </p>
+  <footer class="footer">
+    <div class="foot-txt">
+      <p>Lofoten Trek | © 2021, All rights reserved</p>
+    </div>
   </footer>
 
 </body>

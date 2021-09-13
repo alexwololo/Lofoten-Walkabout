@@ -1,6 +1,7 @@
 /* RESET */
 
 * {
+  /* box-sizing so that padding doesnt take up the width */
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -35,11 +36,7 @@ h1, h2, h3, p {
 
 
 
-/*******************************************************************************
-
-MOBILE
-
-*******************************************************************************/
+/***************************** MOBILE ***********************/
 
 /* HEADER */
 .nav {
@@ -121,7 +118,7 @@ height: 100%;
 background: rgba(28, 28, 28, 0.6);
 }
 
-/* Anything in .her get z index of 10 menaing higher z indez closer to me/screen */
+/* Anything in .hero get z index of 10 meaning higher z index closer to me/screen */
 .hero * {
 z-index: 10;
 }
