@@ -20,6 +20,7 @@ MOBILE
   align-items: center;
   justify-content: center;
   /* flex: 1 0 10vh; */
+  background: #615c58;
 }
 
 .logo {
@@ -30,7 +31,7 @@ MOBILE
 }
 
 span {
-color: #727272;
+color: #ffffff;
 }
 
 .menu {
@@ -73,6 +74,27 @@ text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: url(/images/lofoten_landing_hero2.jpg) center center/cover;
+  position: relative;
+}
+
+/* Overlay */
+.hero::before {
+content: "";
+/* When having pos absolute the parent has to be pos relative see .hero */
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(28, 28, 28, 0.6);
+
+
+}
+
+/* Anything in .her get z index of 10 menaing higher z indez closer to me/screen */
+.hero * {
+z-index: 10;
 }
 
 .hero-txt {
@@ -96,12 +118,15 @@ flex-direction: column;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  background: url(/images/hike.jpg) center center/cover;
 }
 
 .hike-txt {
   border: 1px solid #000;
   padding: 1vw;
   margin: 2vh;
+  background-color: #3c3c3c;
+  color: #fff;
 }
 
 .eat {
@@ -112,12 +137,15 @@ flex-direction: column;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  background: url(/images/eat.jpg) center center/cover;
 }
 
 .eat-txt {
 border: 1px solid #000;
 padding: 1vw;
 margin: 2vh;
+background-color: #3c3c3c;
+color: #fff;
 }
 
 .sleep {
@@ -128,12 +156,15 @@ margin: 2vh;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  background: url(/images/live.jpg) center center/cover;
 }
 
 .sleep-txt {
 border: 1px solid #000;
 padding: 1vw;
 margin: 2vh;
+background-color: #3c3c3c;
+color: #fff;
 }
 
 /* FOOTER */
@@ -143,6 +174,8 @@ margin: 2vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #3c3c3c;
+  color: #fff;
 
 }
 
@@ -150,6 +183,8 @@ margin: 2vh;
   border: solid 1px #000;
   padding: 1vw;
   margin: 1vh;
+  background-color: #3c3c3c;
+  color: #fff;
 }
 
 /*******************************************************************************
@@ -176,9 +211,6 @@ padding: 1rem;
 margin: 1rem;
 }
 
-span {
-color: #727272;
-}
 
 .menu {
 border: 1px solid #000;
