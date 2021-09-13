@@ -9,16 +9,20 @@ main {
   background-color: rgba(32, 32, 32, 0.9);
 }
 
+h2 {
+  font-size: 1.2rem;
+}
+
 
 /***************************** MOBILE ***********************/
 
 /****** HERO IMG #1 *****/
-.hero-image {
+.hero-image-one {
   background-image: linear-gradient(
   rgba(255, 0, 0, 0.1),
   rgba(255, 0, 0, 0.1)),
-  url("images/hero_lofoten_small.jpg");
-  background-position: center top;
+  url("images/nature_small.jpg");
+  background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -27,22 +31,22 @@ main {
   height: 25vh;
 }
 
-.hero-image .hero-text {
+.hero-image-one .hero-text {
   color: white;
   text-align: center;
 }
 
-.hero-image .hero-text h1{
+.hero-image-one .hero-text h1{
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 
-.hero-image .hero-text p{
+.hero-image-one .hero-text p{
   font-size: 1.2rem;
   line-height: 1.5rem;
 }
 
-.hero-image .hero-button{
+.hero-image-one .hero-button{
   text-decoration: none;
   font-size: 1rem;
   color: white;
@@ -75,11 +79,7 @@ main {
   border-radius: 0.2rem;
   padding: 1rem;
   background-color: rgba(255, 255, 255, .7);
-  max-width: 500px;
-}
-
-h2 {
-  font-size: 1.2rem;
+  max-width: 450px;
 }
 
 input[type=text], select, textarea{
@@ -92,7 +92,7 @@ input[type=text], select, textarea{
 
 textarea {
   resize: none;
-  height: 60%;
+  height: 10vh;
 }
 
 .form-button {
@@ -123,7 +123,7 @@ textarea {
   background-color: rgba(255, 255, 255, .7);
   border-radius: 0.2rem;
   padding: 1rem 0;
-  max-width: 500px;
+  max-width: 450px;
 }
 
 #emp-one {
@@ -160,11 +160,11 @@ textarea {
 
 /****** HERO IMG #2 *****/
 
-.hero-image-small {
+.hero-image-two {
   width: 100%;
   object-fit: cover;
   margin: 1rem 0;
-
+  max-height: 25vh;
 }
 
 /****** FOOTER *****/
@@ -180,33 +180,54 @@ footer {
 /***************************** DESKTOP ***********************/
 
 @media screen and (min-width: 750px) {
-  .hero-image {
+  /****** HERO IMG #1 ******/
+  .hero-image-one {
     background-image: linear-gradient(
     rgba(255, 0, 0, 0.1),
     rgba(255, 0, 0, 0.1)),
-    url("images/hero_lofoten_large.jpg");
-    background-position: center top;
+    url("images/nature_large.jpg");
+    background-position: center bottom;
     height: 40vh;
   }
 
-  #form-background {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
+  /****** CONTACT FORM ******/
   #contact-container {
-    max-width: none;
-    width: 80%;
+    max-width: 700px;
+    padding: 1rem 2rem;
   }
 
-}
+  input[type=text], select, textarea {
+    padding: .5rem;
+  }
 
-/* display: flex;
-flex-direction: column;
-text-align: center;
-border-radius: 0.2rem;
-padding: 1rem;
-background-color: rgba(255, 255, 255, .7);
-max-width: 500px;
- */
+  /****** OUR EMPLOYEES ******/
+  #emp-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+    "h2 h2"
+    "emp-one emp-two";
+    max-width: 700px;
+    padding: 1rem 2rem;
+  }
+
+  #emp-container h2 {
+    grid-area: h2;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  #emp-one {
+    grid-area: emp-one;
+  }
+
+  #emp-two {
+    grid-area: emp-two;
+  }
+
+  /****** HERO IMG #2 ******/
+  .hero-image-two {
+    max-height: 40vh;
+  }
+}
