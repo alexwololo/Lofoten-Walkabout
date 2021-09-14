@@ -184,6 +184,7 @@ textarea {
   object-fit: cover;
   margin-top: 1rem;
   max-height: 30vh;
+  vertical-align: middle;
 }
 
 
