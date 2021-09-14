@@ -7,6 +7,10 @@
   padding: 0;
 }
 
+h2 {
+  font-size: 1.2rem;
+}
+
 /***************************** MOBILE ***********************/
 
 /****** HERO IMG *****/
@@ -43,29 +47,31 @@
 .button {
   text-decoration: none;
   font-size: 1rem;
-  color: white;
-  background-color: rgb(32, 32, 32);
+  color: rgb(255, 255, 255);
   padding: 0.5rem 1rem;
   border-radius: .2rem;
   margin-top: 2rem;
   display: inline-block;
   cursor: pointer;
+  background-color: rgba(112, 121, 140, 0.932);
+  border: solid #656f83d0 .1rem;
+}
+
+.button a:visited {
+  color: white;
 }
 
 /* .button a:active {
   color: rgb(32, 32, 32);
 } */
 
-.button :link {
+/* .button :link {
   color: rgb(32, 32, 32);
-}
+} */
 
-.button a:visited {
-  color: rgb(32, 32, 32);
-}
 
 .button:hover {
-  color: rgb(32, 32, 32);
+  color: #70798ca1 !important;
   background-color: rgb(255, 255, 255);
 }
 
@@ -85,7 +91,8 @@
   text-align: center;
   border-radius: 0.2rem;
   padding: 1rem;
-  background-color: rgba(255, 255, 255, .7);
+  /* background-color: rgba(255, 255, 255, .7); */
+  background-color: #dad2bcd2;
   max-width: 450px;
 }
 
@@ -127,7 +134,9 @@ textarea {
   flex-direction: column;
   align-items: center;
   margin: 1rem 1.5rem;
-  background-color: rgba(255, 255, 255, .7);
+ /*  background-color: rgba(255, 255, 255, .7); */
+  background-color: #dad2bcd2;
+  /* background-color: #f5f1ed; */
   border-radius: 0.2rem;
   padding: 1rem 0;
   max-width: 450px;
@@ -135,32 +144,35 @@ textarea {
 
 #emp-one {
   margin: 1rem 1rem;
-  padding: 1rem;
+  padding: .2rem;
   text-align: center;
-  background-color: rgba(70, 68, 68, 0.9);
+  /* background-color: #70798cb4; */
   border-radius: 0.2rem;
 }
 
 #emp-two {
   margin: 1rem 1rem;
-  padding: 1rem;
+  padding: .2rem;
   text-align: center;
-  background-color: rgba(70, 68, 68, 0.9);
+  /* background-color: #70798cb4; */
   border-radius: 0.2rem;
 }
 
 .img-employee {
   width: 100%;
-  margin-bottom: .4rem;
+  /* margin-bottom: .4rem; */
   object-fit: cover;
   border-radius: 0.1rem;
+  vertical-align: middle;
   }
 
 .emp-text {
   /* block-size: fit-content; */
   font-size: .8rem;
-  padding: .8rem;
-  background-color: grey;
+  padding: 1.5rem 0;
+  /* background-color: grey; */
+  /* background-color: #A99985; */
+  background-color: #70798cb4;
   color: rgb(255, 255, 255);
   border-radius: 0.1rem;
 }
@@ -173,6 +185,7 @@ textarea {
   margin-top: 1rem;
   max-height: 30vh;
 }
+
 
 /***************************** DESKTOP ***********************/
 
@@ -207,6 +220,7 @@ textarea {
     "emp-one emp-two";
     max-width: 700px;
     padding: 1rem 2rem;
+
   }
 
   #emp-container h2 {
@@ -226,5 +240,6 @@ textarea {
   /******  IMG  ******/
   .image-banner {
     max-height: 40vh;
+    vertical-align: middle;
   }
 }

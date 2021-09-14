@@ -7,12 +7,11 @@
     margin: 0;
   }
 
-  main {
-    background-color: rgba(32, 32, 32, 0.9);
-  }
 
-  h2 {
-    font-size: 1.2rem;
+
+  main {
+    /* background-color: rgba(32, 32, 32, 0.9); */
+    background-color: #f5f1ed;
   }
 
   /* GLOBAL STYLE */
@@ -20,22 +19,12 @@
   /* Fonts */
 
 
-  /* Text colors */
+  /* Text size */
   h1, h2, h3, p {
     line-height: 1.5;
   }
 
-  /* Buttons */
-  .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    color: #fff;
-    background-color: #bebebe;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    margin: 10px;
-  }
+
 
   /* NAVBAR */
   /* HEADER */
@@ -46,7 +35,7 @@
     align-items: center;
     justify-content: center;
     /* flex: 1 0 10vh; */
-    background: #615c58;
+    background: #70798C;
     position: sticky;
     top: 0;
     z-index: 11;
@@ -99,7 +88,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: #3c3c3c;
+      background: #70798C;
       color: #fff;
     }
 
