@@ -41,7 +41,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(/images/lofoten_landing_hero2_small.webp) center center/cover;
+  background: url(images/lofoten_landing_hero2_small.webp) center center/cover;
   position: relative;
 }
 
@@ -94,7 +94,7 @@ flex-direction: column;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  background: url(/images/hike_small.webp) center center/cover;
+  background: url(images/hike_small.webp) center center/cover;
   border-top: .1rem solid #635535;
 }
 
@@ -103,7 +103,7 @@ flex-direction: column;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  background: url(/images/eat_small.webp) center center/cover;
+  background: url(images/eat_small.webp) center center/cover;
   border-top: .1rem solid #635535;
 }
 
@@ -112,7 +112,7 @@ flex-direction: column;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  background: url(/images/live_small.webp) center center/cover;
+  background: url(images/live_small.webp) center center/cover;
   border-top: .1rem solid #635535;
   border-bottom: .1rem solid #635535;
 }
@@ -145,16 +145,16 @@ TABLET / DESKTOP
   }
 
   .hero {
-    background: url(/images/lofoten_landing_hero2_large.webp) center center/cover;
+    background: url(images/lofoten_landing_hero2_large.webp) center center/cover;
   }
   .hike {
-    background: url(/images/hike_large.webp) center center/cover;
+    background: url(images/hike_large.webp) center center/cover;
   }
   .eat {
-    background: url(/images/eat_large.webp) center center/cover;
+    background: url(images/eat_large.webp) center center/cover;
   }
   .sleep {
-    background: url(/images/live_large.webp) center center/cover;
+    background: url(images/live_large.webp) center center/cover;
   }
 
   .hike, .eat, .sleep {

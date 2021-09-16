@@ -46,6 +46,7 @@ p {
   flex: 1 0 auto;
   padding: 0.5rem;
   margin: 0.5rem;
+
 }
 .logo h1 {
   color: #57FFC6;
@@ -58,7 +59,7 @@ span {
 .menu {
   text-align: right;
   padding: 0.5rem;
-  margin: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .menu ul {
@@ -84,6 +85,12 @@ a {
   text-decoration: none;
 }
 
+.image-banner{
+  width: 100%;
+  object-fit: cover;
+  max-height: 30vh;
+  vertical-align: middle;
+}
 
 /* FOOTER */
 .footer {
@@ -114,13 +121,15 @@ a {
   .logo {
     padding: 0.5rem;
     margin: 0.5rem;
-    text-align: left;
+    margin-left: 4rem;
+
   }
 
   .menu {
     padding: 0.5rem;
     margin: 0.5rem;
-    text-align: right;
+    margin-right: 2rem;
+
   }
 
   .menu ul {

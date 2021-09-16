@@ -1,24 +1,13 @@
 /* RESET */
 
-* {
-  /* box-sizing so that padding doesnt take up the width */
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-h2 {
-  font-size: 1.2rem;
-}
-
-/***************************** MOBILE ***********************/
+/************ MOBILE **********/
 
 /****** HERO IMG *****/
 .hero-image-one {
   background-image: linear-gradient(
   rgba(255, 0, 0, 0.1),
   rgba(255, 0, 0, 0.1)),
-  url("images/nature_small.jpg");
+  url("images/nature_small.WebP");
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -33,46 +22,48 @@ h2 {
   text-align: center;
 }
 
-.hero-image-one .hero-text h1{
+.hero-image-one .hero-text h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
+  font-weight: normal;
 }
 
-.hero-image-one .hero-text p{
-  font-size: 1.7rem;
+.hero-image-one .hero-text p {
+  font-size: 1.5rem;
   line-height: 2rem;
   padding: 0 5rem;
+  font-weight: lighter;
 }
 
+/* BUTTON */
 .button {
   text-decoration: none;
   font-size: 1rem;
-  color: rgb(255, 255, 255);
   padding: 0.5rem 1rem;
   border-radius: .2rem;
   margin-top: 2rem;
   display: inline-block;
   cursor: pointer;
-  background-color: rgba(112, 121, 140, 0.932);
-  border: solid #656f83d0 .1rem;
+  color: white;
+  background-color: #0A9396;
+  border: solid #300404 .1rem;
+}
+
+.button:hover {
+  background-color: #300404;
+}
+
+.button a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 
 .button a:visited {
   color: white;
 }
 
-/* .button a:active {
-  color: rgb(32, 32, 32);
-} */
-
-/* .button :link {
-  color: rgb(32, 32, 32);
-} */
-
-
-.button:hover {
-  color: #70798ca1 !important;
-  background-color: rgb(255, 255, 255);
+.button:hover, .button:hover a:visited {
+  color: rgb(255, 255, 255);
 }
 
 /****** CONTACT FORM ******/
@@ -82,7 +73,6 @@ h2 {
   align-items: center;
   justify-content: center;
   margin: 2rem 1.5rem 1rem;
-  /* height: 40vh; */
 }
 
 #contact-container {
@@ -91,12 +81,11 @@ h2 {
   text-align: center;
   border-radius: 0.2rem;
   padding: 1rem;
-  /* background-color: rgba(255, 255, 255, .7); */
   background-color: #dad2bcd2;
   max-width: 450px;
 }
 
-input[type=text], select, textarea{
+input[type=text], select, textarea {
   padding: .2rem;
   margin: .2rem 0;
   border: 0.1rem solid rgba(110, 103, 103, 0.7);
@@ -108,19 +97,6 @@ textarea {
   resize: none;
   height: 10vh;
 }
-
-/* .form-button {
-  font-size: 1rem;
-  color: white;
-  background-color: rgba(32, 32, 32, 0.9);
-  padding: .3rem 1rem;
-  border-radius: .2rem;
-}
-
-.form-button:hover {
-  color: rgba(32, 32, 32, 0.9);
-  background-color: rgba(255, 255, 255, 0.7);
-} */
 
 /****** OUR EMPLOYEES ******/
 
@@ -134,9 +110,7 @@ textarea {
   flex-direction: column;
   align-items: center;
   margin: 1rem 1.5rem;
- /*  background-color: rgba(255, 255, 255, .7); */
   background-color: #dad2bcd2;
-  /* background-color: #f5f1ed; */
   border-radius: 0.2rem;
   padding: 1rem 0;
   max-width: 450px;
@@ -146,7 +120,6 @@ textarea {
   margin: 1rem 1rem;
   padding: .2rem;
   text-align: center;
-  /* background-color: #70798cb4; */
   border-radius: 0.2rem;
 }
 
@@ -154,31 +127,25 @@ textarea {
   margin: 1rem 1rem;
   padding: .2rem;
   text-align: center;
-  /* background-color: #70798cb4; */
   border-radius: 0.2rem;
 }
 
 .img-employee {
   width: 100%;
-  /* margin-bottom: .4rem; */
   object-fit: cover;
   border-radius: 0.1rem;
   vertical-align: middle;
-  }
+}
 
 .emp-text {
-  /* block-size: fit-content; */
   font-size: .8rem;
-  padding: 1.5rem 0;
-  /* background-color: grey; */
-  /* background-color: #A99985; */
-  background-color: #70798cb4;
+  padding: 1.5rem .8rem;
+  background-color: #424242d6;
   color: rgb(255, 255, 255);
   border-radius: 0.1rem;
 }
 
 /****** IMG *****/
-
 .image-banner{
   width: 100%;
   object-fit: cover;
@@ -188,7 +155,7 @@ textarea {
 }
 
 
-/***************************** DESKTOP ***********************/
+/************* DESKTOP ************/
 
 @media screen and (min-width: 750px) {
   /****** HERO IMG ******/
@@ -196,9 +163,13 @@ textarea {
     background-image: linear-gradient(
     rgba(255, 0, 0, 0.1),
     rgba(255, 0, 0, 0.1)),
-    url("images/nature_large.jpg");
+    url("images/nature_large.WebP");
     background-position: center bottom;
     height: 50vh;
+  }
+
+  .hero-image-one .hero-text p {
+    font-size: 1.7rem;
   }
 
   /****** CONTACT FORM ******/
@@ -221,7 +192,6 @@ textarea {
     "emp-one emp-two";
     max-width: 700px;
     padding: 1rem 2rem;
-
   }
 
   #emp-container h2 {
