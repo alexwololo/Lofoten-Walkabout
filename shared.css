@@ -92,6 +92,13 @@ a {
   vertical-align: middle;
 }
 
+.image-banner-main{
+  width: 100%;
+  object-fit: cover;
+  max-height: 25vh;
+  vertical-align: middle;
+}
+
 /* FOOTER */
 .footer {
   flex: 1 0 30vh;
@@ -114,9 +121,10 @@ a {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
     height: 10vh;
   }
+
+
 
   .logo {
     padding: 0.5rem;
@@ -137,5 +145,5 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+  }
 }
